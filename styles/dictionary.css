@@ -1,0 +1,64 @@
+/* Dictionary Section */
+.dictionary-section {
+  padding: 20px;
+}
+
+.dictionary-search {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.dictionary-search input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+}
+
+.dictionary-search button {
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  font-family: "poppins", sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dictionary-search button:hover {
+  background: #2563eb;
+}
+.dictionary-result {
+  background: #eff6ff; /* light blue tint */
+  padding: 20px;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.dictionary-result:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dictionary-result h3 {
+  font-size: 1.5rem;
+  color: #2563eb; /* strong blue for the word */
+  margin-bottom: 10px;
+}
+
+.dictionary-result p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.dictionary-result audio {
+  margin-top: 10px;
+  display: block;
+}
+

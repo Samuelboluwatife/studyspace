@@ -1,0 +1,28 @@
+ 
+ 
+ .pdf-reader {
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+h2{
+    color:#3b82f6;
+}
+
+.pdf-viewer {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+input[type="file"] {
+  margin-top: 15px;
+  padding: 8px;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "poppins", sans-serif;
+}

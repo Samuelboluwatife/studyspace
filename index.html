@@ -1,64 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reading Workspace</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="download (4).png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Edu-space</title>
 </head>
 <body>
-  <div class="container">
-    
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2 class="logo">StudySpace</h2>
-      <ul class="nav-links">
-        <li><a href="library.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M8.51 2h6.98c.232 0 .41 0 .566.015c1.108.109 2.015.775 2.4 1.672H5.544c.385-.897 1.292-1.563 2.4-1.672C8.098 2 8.276 2 8.51 2m-2.2 2.723c-1.39 0-2.53.84-2.91 1.954l-.024.07c.398-.12.813-.2 1.232-.253c1.08-.139 2.446-.139 4.032-.139h6.892c1.586 0 2.951 0 4.032.139c.42.054.834.132 1.232.253l-.023-.07c-.38-1.114-1.52-1.954-2.911-1.954z"/><path fill="#fff" fill-rule="evenodd" d="M8.672 7.542h6.656c3.374 0 5.062 0 6.01.987s.724 2.511.278 5.56l-.422 2.892c-.35 2.391-.525 3.587-1.422 4.303s-2.22.716-4.867.716h-5.81c-2.646 0-3.97 0-4.867-.716s-1.072-1.912-1.422-4.303l-.422-2.891c-.447-3.05-.67-4.574.278-5.561s2.636-.987 6.01-.987M8 18c0-.414.373-.75.833-.75h6.334c.46 0 .833.336.833.75s-.373.75-.833.75H8.833c-.46 0-.833-.336-.833-.75" clip-rule="evenodd"/></svg> <span>Library</span></a></li>
-        <li><a href="notes.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M17.5 21h1v-2.5H21v-1h-2.5V15h-1v2.5H15v1h2.5zm.5 2q-2.075 0-3.537-1.463T13 18t1.463-3.537T18 13t3.538 1.463T23 18t-1.463 3.538T18 23M7 9h10V7H7zm4.675 12H5q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v6.7q-.725-.35-1.463-.525T18 11q-.275 0-.513.012t-.487.063V11H7v2h6.125q-.45.425-.812.925T11.675 15H7v2h4.075q-.05.25-.062.488T11 18q0 .825.15 1.538T11.675 21"/></svg> <span>Notes</span></a></li>
-        <li><a href="calculator.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" fill-rule="evenodd" d="M12 22c-4.243 0-6.364 0-7.682-1.465C3 19.072 3 16.714 3 12s0-7.071 1.318-8.536S7.758 2 12 2s6.364 0 7.682 1.464C21 4.93 21 7.286 21 12s0 7.071-1.318 8.535S16.242 22 12 22m3-16H9c-.465 0-.697 0-.888.051a1.5 1.5 0 0 0-1.06 1.06C7 7.304 7 7.536 7 8s0 .697.051.888a1.5 1.5 0 0 0 1.06 1.06C8.304 10 8.536 10 9 10h6c.465 0 .697 0 .888-.051a1.5 1.5 0 0 0 1.06-1.06C17 8.696 17 8.464 17 8s0-.697-.051-.888a1.5 1.5 0 0 0-1.06-1.06C15.697 6 15.464 6 15 6m-6 7a1 1 0 1 1-2 0a1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2m5-1a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-1 5a1 1 0 1 0 0-2a1 1 0 0 0 0 2m-3-1a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2" clip-rule="evenodd"/></svg> <span>Calculator</span></a></li>
-        <li><a href="cgpa.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M10.514 6.49a4.5 4.5 0 0 1 2.973 0l7.6 2.66c.803.282.803 1.418 0 1.7l-7.6 2.66a4.5 4.5 0 0 1-2.973 0l-5.509-1.93a1.24 1.24 0 0 0-.436.597a1 1 0 0 1 .013 1.635l.004.018l.875 3.939a.6.6 0 0 1-.585.73H3.125a.6.6 0 0 1-.586-.73l.875-3.94l.005-.017a1 1 0 0 1 .132-1.707a2.35 2.35 0 0 1 .413-.889l-1.05-.367c-.804-.282-.804-1.418 0-1.7z"/><path fill="#fff" d="m6.393 12.83l-.332 2.654c-.057.452.127.92.52 1.196c1.157.815 3.043 1.82 5.42 1.82a9 9 0 0 0 5.473-1.834c.365-.28.522-.727.47-1.152l-.336-2.685l-4.121 1.442a4.5 4.5 0 0 1-2.973 0z"/></svg> <span>CGPA</span></a></li>
-        <li><a href="dictionary.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14"><path fill="#fff" fill-rule="evenodd" d="M1.25 11.625V2.25A2.25 2.25 0 0 1 3.5 0h7a2.25 2.25 0 0 1 2.25 2.25V10a.75.75 0 0 1-.75.75h-.25v1.75H12a.75.75 0 0 1 0 1.5H3.625a2.375 2.375 0 0 1-2.375-2.375m9-.875H3.625a.875.875 0 0 0 0 1.75h6.625zm.56-5.978a.5.5 0 0 0-.443-.27H8.05a.5.5 0 0 0 0 1H9.4L7.499 8.186a.5.5 0 0 0 .408.789h2.604a.5.5 0 1 0 0-1H8.874l1.9-2.684a.5.5 0 0 0 .037-.519M5.815 2.63a.902.902 0 0 0-1.71 0l-.677 2.03l-.007.022l-.383 1.146a.5.5 0 1 0 .95.317l.27-.816H5.66l.272.816a.5.5 0 0 0 .949-.317l-.382-1.146l-.008-.022zM4.59 4.328l.368-1.102l.367 1.102z" clip-rule="evenodd"/></svg><span>Dictionary</span></a></li>
-        <li><a href="courses.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M3 23h18V1H3zM14.002 6.688L11.504 8.75V3H16.5v5.75z"/></svg><span>Courses</span></a></li>
-        <li><a href="task.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 28 28"><path fill="#fff" d="M4 5.25A3.25 3.25 0 0 1 7.25 2h13.5A3.25 3.25 0 0 1 24 5.25v12.129q-.181.12-.341.28L22.5 18.818V5.25a1.75 1.75 0 0 0-1.75-1.75H7.25A1.75 1.75 0 0 0 5.5 5.25v17.5c0 .966.784 1.75 1.75 1.75h8.068l1.5 1.5H7.25A3.25 3.25 0 0 1 4 22.75zm6.5 3.5a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0m-1.25 6.5a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5m0 5.25a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5M12.75 8a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5zM12 14a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 12 14m.75 4.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5zm13.03 1.28l-6 6a.75.75 0 0 1-1.06 0l-2.998-2.998a.75.75 0 0 1 1.06-1.06l2.468 2.467l5.47-5.47a.75.75 0 1 1 1.06 1.061"/></svg><span>Tasks</span></a></li>
-        <li><a href="pdf.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 15"><path fill="#fff" d="M3.5 8H3V7h.5a.5.5 0 0 1 0 1M7 10V7h.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5z"/><path fill="#fff" fill-rule="evenodd" d="M1 1.5A1.5 1.5 0 0 1 2.5 0h8.207L14 3.293V13.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 1 13.5zM3.5 6H2v5h1V9h.5a1.5 1.5 0 1 0 0-3m4 0H6v5h1.5A1.5 1.5 0 0 0 9 9.5v-2A1.5 1.5 0 0 0 7.5 6m2.5 5V6h3v1h-2v1h1v1h-1v2z" clip-rule="evenodd"/></svg><span>PDF Reader</span></a></li>
-      </ul>
-    </aside>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <header>
+    <div class="navbar">
+      <div class="logo">StudySpace</div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <a href="auth.html" target="_blank" class="get-started-btn">Get Started</a>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="hero-heading"> Your <span>Smart Study</span> Hub</h1>
+      <p>
+        Organize your study notes, generate flashcards with AI, track your progress 
+        all in one powerful, easy-to-use platform designed for modern learners.
+      </p>
+      <button class="btn-primary">Start Learning Now</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="./images/Research paper-pana.svg" alt="Study illustration">
+    </div>
+  </section>
 
 
-    <!-- Main Content Area -->
-    <main class="main-content">
-      
-      <!-- Top Bar -->
-      <header class="topbar">
-        <button  class="hamburger" onclick="toggleSidebar()">☰</button>
-        <div class="search">
-          <input type="text" placeholder="Search..." class="search-bar">
-          <button><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="#2563eb" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"/></svg></button>
-        </div>
-        <div class="profile">
-          <h4>hi,<span>user</span></h4>
-          <div class="img"><img src="./images/Ay...jpg" alt=""></div>
-        </div>
-        
-        <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
-    
-      
-
-      </header>
-      
-      <!-- Dynamic Content -->
-      <section id="dynamic-content">
-        <h2>Welcome to StudySpace</h2>
-        <p>Select a tool from the sidebar to get started.</p>
-      </section>
-      
-    </main>
+  <section class="features-bento" id="features">
+  <div class="section-header">
+    <h2>Everything You Need for Smarter Studying</h2>
+    <p>All your study tools, beautifully organized in one place.</p>
   </div>
 
-<script src="./js/theme.js"></script>
-  <script src="./js/app.js"></script>
+  <div class="bento-grid">
+    <!-- Large Card -->
+    <div class="bento-card large">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24"><path fill="#2563EB" d="M8.51 2h6.98c.232 0 .41 0 .566.015c1.108.109 2.015.775 2.4 1.672H5.544c.385-.897 1.292-1.563 2.4-1.672C8.098 2 8.276 2 8.51 2m-2.2 2.723c-1.39 0-2.53.84-2.91 1.954l-.024.07c.398-.12.813-.2 1.232-.253c1.08-.139 2.446-.139 4.032-.139h6.892c1.586 0 2.951 0 4.032.139c.42.054.834.132 1.232.253l-.023-.07c-.38-1.114-1.52-1.954-2.911-1.954z"/><path fill="#2563EB" fill-rule="evenodd" d="M8.672 7.542h6.656c3.374 0 5.062 0 6.01.987s.724 2.511.278 5.56l-.422 2.892c-.35 2.391-.525 3.587-1.422 4.303s-2.22.716-4.867.716h-5.81c-2.646 0-3.97 0-4.867-.716s-1.072-1.912-1.422-4.303l-.422-2.891c-.447-3.05-.67-4.574.278-5.561s2.636-.987 6.01-.987M8 18c0-.414.373-.75.833-.75h6.334c.46 0 .833.336.833.75s-.373.75-.833.75H8.833c-.46 0-.833-.336-.833-.75" clip-rule="evenodd"/></svg></span>
+      <h3>Library</h3>
+      <p>Organize your study materials, books, and slides effortlessly.</p>
+    </div>
+
+    <!-- Medium Card -->
+    <div class="bento-card medium">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 24 24"><path fill="none" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60 60 0 0 0-.491 6.347A48.6 48.6 0 0 1 12 20.904a48.6 48.6 0 0 1 8.232-4.41a61 61 0 0 0-.491-6.347m-15.482 0a51 51 0 0 0-2.658-.813A60 60 0 0 1 12 3.493a60 60 0 0 1 10.399 5.84q-1.345.372-2.658.814m-15.482 0A51 51 0 0 1 12 13.489a50.7 50.7 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55 55 0 0 1 12 8.443m-7.007 11.55A5.98 5.98 0 0 0 6.75 15.75v-1.5"/></svg></span>
+      <h3>progress Tracker</h3>
+      <p>Track and monitor your academic performance in real-time.</p>
+    </div>
+
+    <!-- Small Card -->
+    <div class="bento-card small">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 16 16"><path fill="#06B6D4" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5m0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5z"/></svg></span>
+      <h3>Calculator</h3>
+      <p>Quickly solve math problems without leaving the app.</p>
+    </div>
+
+    <!-- Large Card -->
+    <div class="bento-card large" id="large">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 16 16"><path fill="#8B5CF6" d="m13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"/></svg></span>
+      <h3>Quick Notes</h3>
+      <p>Jot and organize your ideas with ease and clarity.</p>
+    </div>
+
+    <!-- Small Card -->
+    <div class="bento-card small">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 14 14"><path fill="#059669" fill-rule="evenodd" d="M1.25 11.625V2.25A2.25 2.25 0 0 1 3.5 0h7a2.25 2.25 0 0 1 2.25 2.25V10a.75.75 0 0 1-.75.75h-.25v1.75H12a.75.75 0 0 1 0 1.5H3.625a2.375 2.375 0 0 1-2.375-2.375m9-.875H3.625a.875.875 0 0 0 0 1.75h6.625zm.56-5.978a.5.5 0 0 0-.443-.27H8.05a.5.5 0 0 0 0 1H9.4L7.499 8.186a.5.5 0 0 0 .408.789h2.604a.5.5 0 1 0 0-1H8.874l1.9-2.684a.5.5 0 0 0 .037-.519M5.815 2.63a.902.902 0 0 0-1.71 0l-.677 2.03l-.007.022l-.383 1.146a.5.5 0 1 0 .95.317l.27-.816H5.66l.272.816a.5.5 0 0 0 .949-.317l-.382-1.146l-.008-.022zM4.59 4.328l.368-1.102l.367 1.102z" clip-rule="evenodd"/></svg></span>
+      <h3>Dictionary</h3>
+      <p>Instantly look up words while studying.</p>
+    </div>
+
+    <!-- Small Card -->
+    <div class="bento-card small">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 14 14"><path fill="#00ffed" fill-rule="evenodd" d="M.658.44A1.5 1.5 0 0 1 1.718 0h5.587a1.5 1.5 0 0 1 1.06.44l3.414 3.414a1.5 1.5 0 0 1 .44 1.06V12.5a1.5 1.5 0 0 1-1.5 1.5h-9a1.5 1.5 0 0 1-1.5-1.5v-11c0-.398.158-.78.44-1.06ZM5.33 4.527a.75.75 0 0 1 .175 1.047L4.108 7.53a.75.75 0 0 1-1.14.094l-.838-.838a.75.75 0 0 1 1.06-1.06l.212.211l.882-1.234a.75.75 0 0 1 1.046-.175Zm.95 1.847a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75m0 3.969a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75m-.775-.738a.75.75 0 1 0-1.22-.872l-.883 1.235l-.212-.212a.75.75 0 0 0-1.06 1.06l.838.838a.75.75 0 0 0 1.14-.094z" clip-rule="evenodd"/></svg></span>
+      <h3>Task manager</h3>
+      <p>Stay on top of your goals with a simple yet powerful task manager.</p>
+    </div>
+
+    <!-- Medium Card -->
+    <div class="bento-card medium">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 20 20"><path fill="#EF4444" d="M17.924 7.154h-.514l.027-1.89a.46.46 0 0 0-.12-.298L12.901.134A.4.4 0 0 0 12.618 0h-9.24a.8.8 0 0 0-.787.784v6.37h-.515c-.285 0-.56.118-.76.328A1.14 1.14 0 0 0 1 8.275v5.83c0 .618.482 1.12 1.076 1.12h.515v3.99A.8.8 0 0 0 3.38 20h13.278c.415 0 .78-.352.78-.784v-3.99h.487c.594 0 1.076-.503 1.076-1.122v-5.83c0-.296-.113-.582-.315-.792a1.05 1.05 0 0 0-.76-.328M3.95 1.378h6.956v4.577a.4.4 0 0 0 .11.277a.37.37 0 0 0 .267.115h4.759v.807H3.95zm0 17.244v-3.397h12.092v3.397zM12.291 1.52l.385.434l2.58 2.853l.143.173h-2.637q-.3 0-.378-.1q-.08-.098-.093-.313zM3 14.232v-6h1.918q1.09 0 1.42.09q.51.135.853.588q.343.451.343 1.168q0 .552-.198.93q-.198.375-.503.59a1.7 1.7 0 0 1-.62.285q-.428.086-1.239.086h-.779v2.263zm1.195-4.985v1.703h.654q.707 0 .945-.094a.79.79 0 0 0 .508-.762a.78.78 0 0 0-.19-.54a.82.82 0 0 0-.48-.266q-.213-.04-.86-.04zm4.04-1.015h2.184q.739 0 1.127.115q.52.155.892.552q.371.398.565.972q.195.576.194 1.418q0 .741-.182 1.277q-.223.655-.634 1.06q-.31.308-.84.48q-.395.126-1.057.126H8.235zM9.43 9.247v3.974h.892q.501 0 .723-.057q.291-.074.482-.25q.193-.176.313-.579q.121-.403.121-1.099t-.12-1.068a1.4 1.4 0 0 0-.34-.581a1.13 1.13 0 0 0-.553-.283q-.25-.057-.98-.057zm4.513 4.985v-6H18v1.015h-2.862v1.42h2.47v1.015h-2.47v2.55z"/></svg></span>
+      <h3>PDF Reader</h3>
+      <p>View and read PDFs directly inside StudySpace.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="about" id="about">
+  <div class="about-container">
+    <!-- Image / Illustration -->
+    <div class="about-image">
+      <img src="./images/Learning-amico.svg" alt="StudySpace illustration">
+    </div>
+
+    <!-- Text Content -->
+    <div class="about-text">
+      <h2>All Your Study Tools, Together in One Place</h2>
+      <p>
+        StudySpace is built to make your academic journey seamless. 
+        From taking notes and tracking your progress to reading books and solving problems,
+        everything you need is right at your fingertips beautifully organized and accessible anytime.
+      </p>
+      <a href="#features" class="cta-btn">Explore Features</a>
+    </div>
+  </div>
+</section>
+
+  <script src="./js/main.js">
+  </script>
+
+
 </body>
 </html>

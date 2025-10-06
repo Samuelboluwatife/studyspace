@@ -176,7 +176,10 @@
         document.getElementById("toggleLogin").addEventListener("click", () => location.reload());
         document.getElementById("signupForm").addEventListener("submit", (e) => {
           e.preventDefault();
-          window.location.href = "dashboard.html";
+          
+         setTimeout(() => {
+      window.location.href = "dashboard.html"; // your dashboard page
+            }, 2500);
         });
       }
     });
@@ -184,7 +187,9 @@
     // Redirect after login
     document.getElementById("loginForm").addEventListener("submit", (e) => {
       e.preventDefault();
-      window.location.href = "dashboard.html";
+          setTimeout(() => {
+        window.location.href = "dashboard.html"; // your dashboard page
+            }, 2500);
     });
   </script>
 </body>

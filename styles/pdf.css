@@ -1,13 +1,17 @@
  
- 
- .pdf-reader {
+.pdf-reader {
   padding: 50px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  background: #f9fafb;
 }
-.pdf-viewer h2{
-    color:#3b82f6;
+
+.pdf-viewer h2 {
+  color: #3b82f6;
+  font-size: 1.8rem;
 }
 
 .pdf-viewer {
@@ -16,13 +20,60 @@
   overflow: hidden;
   border: 1px solid #ddd;
   background: #fff;
+  padding: 20px;
 }
 
 input[type="file"] {
   margin-top: 15px;
-  padding: 8px;
+  padding: 10px 15px;
   border: 1px solid #3b82f6;
   border-radius: 8px;
   cursor: pointer;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+  background-color: #eaf2ff;
+}
+
+/* === Responsive Styling === */
+@media (max-width: 768px) {
+  .pdf-reader {
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: none;
+    width: 300px;
+  }
+
+  .pdf-viewer h2 {
+    font-size: 1.4rem;
+  }
+
+  .pdf-viewer {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  input[type="file"] {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-reader {
+    padding: 20px 15px;
+  }
+
+  .pdf-viewer h2 {
+    font-size: 1.2rem;
+  }
+
+  input[type="file"] {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
 }

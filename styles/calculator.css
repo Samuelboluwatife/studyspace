@@ -111,3 +111,10 @@
 .dark-mode #keys button:hover {
   background: #444;
 }
+
+@media (max-width:992px) {
+  #calculator {
+  width: 300px;
+
+}
+}

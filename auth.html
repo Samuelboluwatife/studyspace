@@ -173,12 +173,13 @@
           <p class="toggle-text">Already have an account? <span id="toggleLogin">Sign in</span></p>
         `;
 
-        document.getElementById("toggleLogin").addEventListener("click", () => location.reload());
+         document.getElementById("toggleLogin").addEventListener("click", () => location.reload());
         document.getElementById("signupForm").addEventListener("submit", (e) => {
           e.preventDefault();
           
          setTimeout(() => {
-      window.location.href = "dashboard.html"; // your dashboard page
+      window.open("dashboard.html", "_blank")
+      // dashboard page
             }, 2500);
         });
       }
@@ -188,7 +189,8 @@
     document.getElementById("loginForm").addEventListener("submit", (e) => {
       e.preventDefault();
           setTimeout(() => {
-        window.location.href = "dashboard.html"; // your dashboard page
+         // dashboard page
+          window.open("dashboard.html", "_blank")
             }, 2500);
     });
   </script>

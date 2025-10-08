@@ -96,8 +96,8 @@ h2 {
 
 @media (max-width :992px) {
   .calendar {
-  width:290px;
-  margin: 0, auto;
+  width:290px !important;
+  
 }
 .days {
   gap: 3px;

@@ -1,0 +1,86 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+ padding: 50px;
+}
+
+.card {
+  background: #3b82f6;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+#taskCount, #assignmentCount{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+h2 {
+  color: #3b82f6;
+  margin-bottom: 10px;
+}
+#count{
+    color: #fff;
+    font-size: 8rem;
+    text-align: center;
+}
+.quotes{
+  background: white;
+  color: #3b82f6;
+  text-align: center;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+#quotestitle{
+    color: #3b82f6;
+    margin-bottom: 30px;
+}
+#quoteText{
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: cursive;
+}
+.calendar {
+  width: 350px;
+  background: linear-gradient(135deg, #cfe8f8, #ace1fd);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 15px;
+  color: white;
+  font-weight: 400;
+}
+.day {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.day:hover {
+  background: #e0f2ff;
+}
+.today {
+  background: #3b82f6;
+  color: #fff;
+}

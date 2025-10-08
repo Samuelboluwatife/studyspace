@@ -1,6 +1,12 @@
 const form = document.querySelector("form");
 const input = document.querySelector("input");
 const taskDisplay = document.getElementById("task-display");
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+
+function saveTasks() {
+  localStorage.setItem("tasks", JSON.stringify(notes));
+}
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -22,6 +28,8 @@ form.addEventListener("submit", (e) => {
 
   completeBtn.addEventListener("click", () => {
     task.classList.toggle("completed");
+
+  
   });
 
   // Delete button
@@ -40,3 +48,4 @@ form.addEventListener("submit", (e) => {
 
   input.value = "";
 });
+saveTasks();

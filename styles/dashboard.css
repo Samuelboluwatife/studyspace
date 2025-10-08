@@ -7,6 +7,7 @@
 
 .card {
   background: #3b82f6;
+
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -32,8 +33,8 @@ h2 {
     text-align: center;
 }
 .quotes{
-  background: white;
-  color: #3b82f6;
+  
+  color: #ffffff;
   text-align: center;
   border-radius: 12px;
   padding: 20px;
@@ -41,7 +42,7 @@ h2 {
   transition: transform 0.2s ease;
 }
 #quotestitle{
-    color: #3b82f6;
+    color: #ffffff;
     margin-bottom: 30px;
 }
 #quoteText{
@@ -64,6 +65,9 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
+#month-year{
+  color: white;
+}
 .days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -81,6 +85,24 @@ h2 {
   background: #e0f2ff;
 }
 .today {
-  background: #3b82f6;
+  background:#fd3a3a;
   color: #fff;
+}
+
+
+@media (max-width :992px) {
+  .calendar {
+  width:290px;
+}
+.days {
+  gap: 3px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.day {
+  padding: 5px;
+}
+#quoteText{
+    font-size: 1.3rem;
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
 }

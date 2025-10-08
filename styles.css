@@ -172,6 +172,7 @@ body.dark-mode .theme-toggle {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  color: #fff;
 }
 
 .img {
@@ -275,6 +276,8 @@ body.dark-mode .theme-toggle {
   .topbar {
     padding: 10px;
     gap: 10px;
+  
+    position: sticky;
   }
 
   .theme-toggle {
@@ -324,4 +327,23 @@ body.dark-mode .theme-toggle {
     transition: none !important;
     animation: none !important;
   }
+}
+.quotes{
+  background: url(./images/stacked-steps-haikei.svg);
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+.calendar {
+  width: 350px;
+  background: url(./images/blob-scatter-haikei\ \(1\).svg) !important;
+  background-size: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
 }

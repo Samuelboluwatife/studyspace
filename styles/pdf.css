@@ -1,4 +1,7 @@
- 
+ .icon img{
+  width:40px;
+
+}
 .pdf-reader {
   padding: 50px;
   border-radius: 12px;
@@ -61,6 +64,10 @@ input[type="file"]:hover {
     font-size: 0.9rem;
     padding: 10px;
   }
+
+  .icon img{
+  width:40px;
+}
 }
 
 @media (max-width: 480px) {
@@ -76,4 +83,10 @@ input[type="file"]:hover {
     font-size: 0.85rem;
     padding: 8px;
   }
+}
+@media (min-width:992px) {
+  .icon img{
+  
+display: none;
+}
 }

@@ -1,5 +1,7 @@
 
-
+.icon img{
+  width:40px;
+}
 .notes-section {
   max-width: 1200px;
   margin: 30px auto;
@@ -105,5 +107,16 @@
   .note-form {
   width: 300px;
   
+}
+.icon img{
+  width:40px;
+
+}
+}
+
+@media (min-width:992px) {
+  .icon img{
+  
+display: none;
 }
 }

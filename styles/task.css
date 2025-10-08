@@ -1,4 +1,6 @@
-
+ .icon img{
+width: 40px;
+  }
 
 .task-container {
   background: #fff;
@@ -115,5 +117,17 @@
   width: 300px;
   max-width: 1200px;
   margin: 30px auto;
+}
+
+  .icon img{
+  
+width: 40px;
+  }
+}
+
+@media (min-width:992px) {
+  .icon img{
+  
+display: none;
 }
 }

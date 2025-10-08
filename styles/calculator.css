@@ -1,3 +1,9 @@
+.icon img{
+  width:40px;
+
+}
+
+
 /* Calculator container */
 #calculator {
   width: 400px;
@@ -116,5 +122,16 @@
   #calculator {
   width: 300px;
 
+}
+.icon img{
+  width:40px;
+
+}
+}
+
+@media (min-width:992px) {
+  .icon img{
+  
+display: none;
 }
 }

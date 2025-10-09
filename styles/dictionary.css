@@ -72,7 +72,10 @@
   flex-direction: column;
  
 }
-
+.dictionary-result audio {
+  width: 100px;
+  color: #3b82f6;
+}
 .icon img{
 width: 40px;
   }

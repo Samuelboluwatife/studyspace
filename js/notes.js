@@ -14,9 +14,20 @@ function renderNotes() {
   notesContainer.innerHTML = "";
 
   if (notes.length === 0) {
-    notesContainer.innerHTML = "<p>No notes yet. Start adding some!</p>";
+  const messagedisplay = document.querySelector(".message");
+   const cancelbutton = document.querySelector(".cancelbtn");
+    messagedisplay.style.display = "block"
+     document.body.classList.add("blurred");
+
+    cancelbutton.addEventListener("click", () => {
+    messagedisplay.style.display = "none";
+    document.body.classList.remove("blurred")
+    setTimeout(() => message.remove(), 300);
+});
     return;
   }
+
+
 
   notes.forEach(note => {
     const noteCard = document.createElement("div");
@@ -63,3 +74,5 @@ function deleteNote(noteId) {
 
 // Initialize
 renderNotes();
+
+

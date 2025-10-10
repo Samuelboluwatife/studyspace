@@ -82,7 +82,7 @@
 .note-card p {
   font-size: 14px;
   color: #555;
-  white-space: pre-wrap; /* Keeps line breaks */
+  white-space: pre-wrap; 
 }
 
 .delete-note {
@@ -102,15 +102,105 @@
   background: #2563eb;
   font-weight: bold;
 }
+body.blurred::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 900;
+}
+
+/* Message Popup Styling */
+.message {
+  display:none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background: white;
+  color:#0056b3;
+  padding: 30px 50px;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  animation: popupFade 0.4s ease-out forwards;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Cancel Button Styling */
+.cancelbtn {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.cancelbtn:hover {
+  transform: rotate(45deg);
+}
+
+/* Popup fade-in */
+@keyframes popupFade {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade-out animation when closing */
+.fade-out {
+  animation: fadeOut 0.4s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
 
 @media (max-width:992px) {
-  .note-form {
+.note-form {
   width: 300px;
   
 }
 .icon img{
   width:40px;
 
+}
+.message{
+  padding: 20px 30px;
+}
+.message p{
+  padding: 0 6px;
 }
 }
 

@@ -62,6 +62,7 @@ width: 40px;
   border-radius: 12px;
   display: flex;
   justify-content: space-evenly;
+  gap: 10px;
   align-items: center;
   border-left: 4px solid #4e89ff;
   transition: transform 0.2s ease;
@@ -77,10 +78,9 @@ width: 40px;
 }
 
 .delete-btn {
-  background:#ff5c5c !important;
+  background:none !important;
   border: none;
   color:#fff;
-  font-size: 16px;
   cursor: pointer;
   transition: color 0.2s ease;
 }
@@ -94,7 +94,7 @@ width: 40px;
 }
 
 .complete-btn {
-  background:#4caf50 !important;
+  background:none !important;
   border: none;
   color:#fff ;
   font-size: 16px;
@@ -103,9 +103,7 @@ width: 40px;
   transition: color 0.2s ease;
 }
 
-.complete-btn:hover {
-  color: #2e7d32;
-}
+
 
 @media (max-width:992px) {
   .task-container form {

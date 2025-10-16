@@ -127,12 +127,15 @@ body.dark-mode .theme-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap:2px;
   flex: 1;
   min-width: 200px;
 }
 
 .search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -144,6 +147,7 @@ body.dark-mode .theme-toggle {
 }
 
 .search-bar {
+  
   padding: 12px 15px;
   outline: none;
   border: none;
@@ -387,13 +391,4 @@ li.dropdown {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
 }
-.calendar {
-  width: 350px;
-  background: url(./images/blob-scatter-haikei\ \(1\).svg) !important;
-  background-size: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-  padding: 20px;
-  font-family: "Poppins", sans-serif;
-}
+

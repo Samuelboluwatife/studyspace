@@ -50,7 +50,7 @@
       <header class="topbar">
         <button  class="hamburger" onclick="toggleSidebar()">☰</button>
         <div class="search">
-          <input type="text" placeholder="Search..." class="search-bar">
+          <input type="text" placeholder="Search for tasks, books, notes ..." class="search-bar">
           <button><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="#2563eb" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"/></svg></button>
         </div>
         <div class="profile">
@@ -59,23 +59,43 @@
         </div>
       </header>
       
-     <div class="dashboard">
+    <div class="dashboard">
 
     <div class=" quotes">
-      <h2 id="quotestitle"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1200 1200"><path fill="#243b55" d="M518.474 105.344C305.831 120.286.168 154.236 0 570.687v523.97h474.504v-560.61H316.946C306.965 384.354 430.23 345.701 564.274 316.03zm635.724 0c-212.643 14.942-518.306 48.893-518.473 465.343v523.97h474.505v-560.61H952.672C942.689 384.354 1065.956 345.701 1200 316.03z"/></svg> Daily Quote</h2>
+      <h2 id="quotestitle"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 1200 1200"><path fill="white" d="M518.474 105.344C305.831 120.286.168 154.236 0 570.687v523.97h474.504v-560.61H316.946C306.965 384.354 430.23 345.701 564.274 316.03zm635.724 0c-212.643 14.942-518.306 48.893-518.473 465.343v523.97h474.505v-560.61H952.672C942.689 384.354 1065.956 345.701 1200 316.03z"/></svg> Daily Quote</h2>
       <p id="quoteText">Loading quote...</p>
     </div>
 
    <!-- Tasks Section -->
     <div class="card tasks">
-      <h2 id="count">3</h2>
-      <p id="taskCount"> Tasks </p>
+      <div>
+      <h2 id="taskcount">10</h2>
+      <p id="tasktext">Total tasks </p>
+      </div>
+      <div id="slash">
+        <div></div>
+      </div>
+      <div>
+      <h2 class="completedtask">3</h2>
+      <p class="tasktext">Completed</p>
+      </div>
+      
     </div>
 
     <!-- Assignments Section -->
     <div class="card assignments">
-      <h2 id="count">2</h2>
-      <p id="assignmentCount"> Assignments </p>
+      <div>
+      <h2 id="assignmentCount">8</h2>
+      <p id="assignmenttext">assignments </p>
+      </div>
+        <div id="slash">
+        <div></div>
+      </div>
+      <div>
+      <h2 id="completedassignment">2</h2>
+      <p id="assignmenttext">Completed </p>
+      </div>
+     
     </div>
 
     <div class="calendar">
@@ -88,21 +108,37 @@
   </div>
 
   <div class="course-progress">
-    <h2>Your progress</h2>
-    <div class="progress-bar">
-      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="green" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10m0-4a6 6 0 1 1 0-12a6 6 0 0 1 0 12"/></svg>
-      <p>100% complete in CSC 321</p>
-    </div>
-    
+    <h2>Continue reading</h2>
+      <div class="details">
+        <p>csc 321</p>
+        <p>95%</p>
+      </div>
+     <div class="progress-bar">
+      <div></div>
+    </div> 
+    <br>
+    <div class="details">
+        <p>csc 323</p>
+        <p>50%</p>
+      </div>
+     <div id="progress-bar2" class="progress-bar">
+      <div></div>
+    </div> 
+    <br>
+  <div class="details">
+        <p>csc 311</p>
+        <p>75%</p>
+      </div>
+     <div id="progress-bar3" class="progress-bar">
+      <div></div>
+    </div> 
   </div>
-    
   </div>
-
-  
+</div> 
 </div>
       
-    </main>
-  </div>
+</main>
+</div>
 
 <script src="./js/dashboard.js"></script>
   <script src="./js/app.js"></script>

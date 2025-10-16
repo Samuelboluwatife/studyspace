@@ -1,4 +1,3 @@
-
 // Daily Quote Section
 const quotes = [
   '"Success is the sum of small efforts, repeated day in and day out."',
@@ -15,14 +14,12 @@ const quotes = [
   '"The harder you work for something, the greater you’ll feel when you achieve it."',
   '"Every day is another chance to get better."',
   '"Success doesn’t come to you; you go to it."',
-  '"It always seems impossible until it’s done."'
+  '"It always seems impossible until it’s done."',
 ];
 
 const quoteText = document.getElementById("quoteText");
 const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 quoteText.textContent = randomQuote;
-
-
 
 // calender section
 const monthYear = document.getElementById("month-year");

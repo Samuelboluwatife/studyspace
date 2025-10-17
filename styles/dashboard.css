@@ -181,7 +181,7 @@
     width: 345px !important;
     height: 350px;
     padding: 5px;
-    /* display: none; */
+ display: none; 
   }
   .calendar .month {
   font-size:1rem;
